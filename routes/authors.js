@@ -18,7 +18,6 @@ router.get('/', async (req, res) =>{
     } catch{
         res.redirect('/')
     }
-
 })
 
 // New Author Route
@@ -43,16 +42,6 @@ router.post('/', async (req, res) => {
         })
 
     }
-
-    // let locals = { author: author, errorMessage : `Error Creating Author` }
-    // author.save((err, newAuthor) => {
-    //     if(err){
-    //         res.render('authors/new', locals)
-    //     } else{
-    //         // res.redirect(`authors/${newAuthor.id}`)
-    //         res.redirect(`authors`)
-    //     }
-    // })
 })
 
 
