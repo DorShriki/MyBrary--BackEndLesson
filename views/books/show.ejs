@@ -5,7 +5,7 @@
 <div> Page Count: <%- book.PageCount %></div>
 <div> Description: <%- book.description %></div>
 
-<a class="btn btn-primary" href="/books/<%= book.id %>/edit">Edit</a>
+<a href="/books/<%= book.id %>/edit">Edit</a>
 <%- include('../partials/deleteForm', {url: `/books/${book.id}`}) %>
-<a class="btn btn-primary" href="/authors/<%= book.author.id %>">View Author</a>
+<a href="/authors/<%= book.author.id %>">View Author</a>
  
